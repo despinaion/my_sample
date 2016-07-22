@@ -2,11 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-h1 {
-	font-family: Georgia, serif;
-	color: red;
-	text-align: center;
+.navbar {
+	background-color: #990099;
+	height: 60px;
 }
 
+.nav a {
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.container {
+	margin-top: 60px;
+	height: 200px;
+}
+
+.footer_position {
+	float: right;
+	margin-top: 300px;
+}
 
