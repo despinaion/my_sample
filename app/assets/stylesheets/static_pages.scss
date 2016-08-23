@@ -14,8 +14,9 @@
 }
 
 .carousel-inner > .item > img {
+	margin: 0 auto;
 	margin-top: 60px;
-    margin: 0 auto;
+    height: none;
 }
 
 .carousel-caption {
