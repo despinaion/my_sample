@@ -15,3 +15,8 @@
  */
 
 
+.nav-bar-brand {
+	float: left;
+	height: 50;
+	line-height: 20px;
+}
