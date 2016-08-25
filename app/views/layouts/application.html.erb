@@ -30,9 +30,17 @@
         </div>
       </div> <!-- env nav header-->
 
+     
+
       <div class='navbar-collapse collapse'>
       	<ul class='nav navbar-nav navbar-right'>
-        	<li><a href='/static_pages/landing_page'>Home</a></li>
+          <li class="navbar-form">
+            <%= form_tag("/products", method: "get") do %>
+            <%= text_field_tag(:q) %>
+           <%= image_submit_tag("search_icon.png", class: "img_responsive", size: "5")%>
+            <% end %>
+          </li>
+          <li><a href='/static_pages/landing_page'>Home</a></li>
           <li><a href='/static_pages/about'>About</a></li>
           <li><a href='/static_pages/contact'>Contact</a></li>
           <li> 
