@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, :except => [:show, :index] #allows not logged in users to see the list of the users
+  before_filter :authenticate_user! #check if the user has been logged in
+  load_and_authorize_resource #finds user and checks his/her abilities, always 
+                              #in the top of the controller we want to authorize
   # GET /users
   # GET /users.json
   def index

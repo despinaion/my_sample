@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html>
 <head>
   <title>MySample</title>
@@ -62,7 +60,17 @@
     </div> <!-- end nav container-->
   </nav>
   
-    <%= flash[:notice] %>
+    <%#= flash[:notice] %>
+    <div class='pos'>
+      <% if notice %>
+        <p id="notice" class="alert alert-danger" role='alert'><%= notice %></p>
+      <% end %>
+    </div>
+    <div class='pos'> 
+      <% if alert %>
+        <p id="alert" class="alert alert-warning" role='alert'><%= alert %></p>
+      <% end %>
+    </div>
     <%= yield %>
 
   
