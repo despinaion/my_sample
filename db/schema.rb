@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160829184046) do
 
   create_table "comments", force: :cascade do |t|
@@ -24,6 +25,9 @@ ActiveRecord::Schema.define(version: 20160829184046) do
 
   add_index "comments", ["product_id"], name: "index_comments_on_product_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
+=======
+ActiveRecord::Schema.define(version: 20160826223217) do
+>>>>>>> authentication
 
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"

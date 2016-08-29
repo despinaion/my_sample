@@ -29,3 +29,7 @@ form input#q{
   display:inline-block;
   vertical-align:top;
 }
+
+.pos {
+	margin-top: 60px;
+}
