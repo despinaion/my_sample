@@ -27,7 +27,9 @@
       <strong>Price:</strong>
       <%= @product.price %>
     </p>
-    <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+    <p>Average Rating: 
+      <div class="rated" data-score="<%= @product.average_rating %>"></div>
+    </p>
     <br>
     <hr>
     <%= link_to 'Edit', edit_product_path(@product) %> |
