@@ -34,8 +34,11 @@
 }
 
 .footer_position {
-	float: right;
-	margin-top: 300px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	left: 80%;
+	right: 0;	
 }
 
 
