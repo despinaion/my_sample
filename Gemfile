@@ -62,4 +62,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
 
+# Gem for functional tests in controllers
+gem 'rails-controller-testing'
+
 
