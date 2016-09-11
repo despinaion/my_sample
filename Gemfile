@@ -66,6 +66,8 @@ end
 # Gem for functional tests in controllers
 gem 'rails-controller-testing'
 
+gem 'stripe'
+
 
 
 
