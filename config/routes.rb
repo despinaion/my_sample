@@ -26,6 +26,10 @@ Rails.application.routes.draw do
    root 'static_pages#index'
    #root 'static_pages#landing_page'
 
+   post 'payments/create'
+
+   get 'products/index'
+
    resources :orders, only: [:index, :show, :create, :destroy]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
