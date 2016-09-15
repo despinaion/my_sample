@@ -4,13 +4,17 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    byebug
     if params[:q]
     search_term = params[:q]
     @products = Product.where("name ilike ?", "%#{search_term}%")
+
     else
     @products = Product.all
     end
     #render layout: "products"
+    #looer.debug-in _product.html.erb shows the names of products in terminal
+    #logger.debug
   end
 
   # GET /products/1
