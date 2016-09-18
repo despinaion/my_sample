@@ -4,13 +4,12 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    
+    #seacch products in navbar section
     if params[:q]
-    search_term = params[:q]
-    @products = Product.where("name ilike ?", "%#{search_term}%")
-
+      search_term = params[:q]
+      @products = Product.where("name ilike ?", "%#{search_term}%")
     else
-    @products = Product.all
+      @products = Product.all
     end
     #render layout: "products"
     #looer.debug-in _product.html.erb shows the names of products in terminal
