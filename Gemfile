@@ -68,6 +68,9 @@ gem 'rails-controller-testing'
 
 gem 'stripe'
 
+#Scanning security of application
+gem 'brakeman'
+
 
 
 
