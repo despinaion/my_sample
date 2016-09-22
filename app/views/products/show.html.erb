@@ -6,7 +6,7 @@
       <% if @product.image_url == '' %>
         <p><%= image_tag('no_image.gif', class: 'img-responsive') %></p>
       <% else %>
-        <p><%= image_tag(@product.image_url, class: 'img-responsive') %></p>
+        <p><%= image_tag(@product.image_url, class: 'img-responsive img-zoom', data_zoom_image: @product.image_url, width: '231', height: '202' ) %></p>
       <% end %>
     </div>
 
