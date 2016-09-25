@@ -74,3 +74,6 @@ gem 'brakeman'
 
 # Ruby Code analyzer
 gem 'rubocop', '~> 0.42.0', require: false
+
+# Ruby memcache client
+gem 'dalli'

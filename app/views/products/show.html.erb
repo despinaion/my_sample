@@ -11,9 +11,11 @@
     </div>
 
     <div class="col-xs-12 col-md-3">
+      <% cache @product do %>
       <p>
         <h1><strong><%= @product.name %></strong></h1>
       </p>
+      <% end %>
       <p><h4>
         <strong>Color:</strong>
         <%= @product.colour %>
