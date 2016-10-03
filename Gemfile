@@ -77,3 +77,6 @@ gem 'rubocop', '~> 0.42.0', require: false
 
 # Ruby memcache client
 gem 'dalli'
+
+# Redis client for caching complex data like a database
+gem 'redis-rails', '~> 4'
