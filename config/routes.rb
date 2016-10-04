@@ -32,6 +32,8 @@ Rails.application.routes.draw do
    get 'products/index'
 
    resources :orders, only: [:index, :show, :create, :destroy]
+
+   mount ActionCable.server => '/cable'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -80,4 +82,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  # It will run ActionCable within the same
+  # process as the rest of your app under the route /cable
+  
+
 end
