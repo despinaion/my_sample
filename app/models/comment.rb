@@ -12,5 +12,5 @@ class Comment < ActiveRecord::Base
   validates :product, presence: true #validation for comment of having product_id
   validates :rating, numericality: { only_integer: true } #validation for comment of having integer rating
 
-
+  after_create_commit { CommentUpdateJob.perform_later(self, @user) }
 end
